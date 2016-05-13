@@ -1,5 +1,7 @@
 # Class Planet
 class MarsGrid
+  attr_reader :top_right_x, :top_right_y
+
   # Constructor
   def initialize(top_right_x = 0, top_right_y = 0)
     @top_right_x = top_right_x

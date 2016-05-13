@@ -2,7 +2,7 @@ require_relative 'direction'
 
 # Class MarsRover
 class MarsRover
-  attr_accessor :id
+  attr_accessor :id, :dir
 
   # Constructor
   def initialize(index, x, y, face)
@@ -12,7 +12,7 @@ class MarsRover
 
   # Prints mars_rover current location
   def print_current_location
-    puts [@dir.x_value, @dir.y_value, @dir.face].join(', ')
+    puts [@dir.x_value, @dir.y_value, @dir.face].join(' ')
   end
 
   # Executes move on 'M' instruction

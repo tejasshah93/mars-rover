@@ -3,6 +3,8 @@ require_relative 'mars_grid'
 
 # Class Solution
 class Solution
+  attr_accessor :grid, :rover
+
   # Checks if input grid is valid or not
   def input_grid_valid?(mars_top_right_x, mars_top_right_y)
     # rubocop:disable RescueModifier
@@ -69,7 +71,7 @@ class Solution
   end
 end
 
-# Main
+# Main: Executes the program
 if __FILE__ == $PROGRAM_NAME
   solution = Solution.new
   solution.take_grid_coordinates
