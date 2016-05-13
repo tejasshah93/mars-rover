@@ -2,9 +2,19 @@
 
 A ruby program to solve the Mars Rover problem.
 
-INPUT AND OUTPUT
+**INPUT AND OUTPUT**
 
-Test Input:  
+The first line of input is the upper-right coordinates of the plateau, the
+lower-left coordinates are assumed to be 0,0.  
+
+The rest of the input is information pertaining to the rovers that have been
+deployed. Each rover has two lines of input. The first line gives the rover's
+position, and the second line is a series of instructions telling the rover how
+to explore the plateau.  
+Each rover will be finished sequentially, which means that the second rover
+won't start to move until the first one has finished moving.  
+
+**Test Input**:  
 ```
 5 5
 1 2 N
@@ -13,7 +23,7 @@ LMLMLMLMM
 MMRMMRMRRM
 ```
 
-Expected Output:  
+**Expected Output**:  
 ```
 1 3 N
 5 1 E
@@ -26,6 +36,10 @@ To execute the ruby program, run the following command:
 
 `$ ruby solution.rb < sample_input`
 
+OR
+
+You can directly type in the inputs on terminal itself. Just run
+`$ ruby solution.rb` and it will allow you to provide inputs accordingly.
 
 ## Testing
 
